@@ -14,4 +14,7 @@ public class AppState
 
     public static string LoadingSceneName= "LoadingScene";
     public static string StartSceneName = "StartScene";
+
+
+    public static string SceneToLoad = string.Empty;
 }

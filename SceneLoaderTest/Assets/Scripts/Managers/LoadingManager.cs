@@ -4,6 +4,7 @@ using System.Collections;
 
 public class LoadingManager : MonoBehaviour
 {
+
     /// <summary>
     /// Loads the specified scene name.
     /// The function will load the Loading Scene which in turn will load the desired scene.
@@ -11,7 +12,8 @@ public class LoadingManager : MonoBehaviour
     /// <param name="SceneName">string of the scene name</param>
     public static void LoadScene(string SceneName)
     {
-
+        AppState.SceneToLoad = SceneName;
+        LoadScene(AppState.LoadingSceneName);
     }
 
 
